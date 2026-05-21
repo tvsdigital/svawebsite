@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - SV Achternmeer e.V.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        :root {
+            --brand-accent: oklch(80.9% 0.105 251.813);
+            --brand-blue: #004a99;
+        }
+
+        .bg-sv-blue { background-color: var(--brand-blue); }
+        .text-sv-blue { color: var(--brand-blue); }
+        .bg-sv-accent { background-color: var(--brand-accent); }
+        .text-sv-accent { color: var(--brand-accent); }
+        .border-sv-accent { border-color: var(--brand-accent); }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--brand-accent);
+        }
+
+        .section-padding { padding: 120px 0 80px 0; }
+        
+        /* Spezielles Styling für die DSGVO Texte zur besseren Lesbarkeit */
+        .dsgvo-content h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--brand-blue);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .dsgvo-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #4b5563;
+        }
+        .dsgvo-content ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #4b5563;
+        }
+        .dsgvo-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="glass-nav fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="logo1.png" alt="SV Achternmeer Logo" class="w-12 h-12 object-contain" onerror="this.src='https://placehold.co/48x48?text=SVA'">
+                    <span class="text-sv-blue font-extrabold text-xl hidden md:block">SV Achternmeer</span>
+                </a>
+            </div>
+            
+            <div class="hidden lg:flex space-x-8 font-semibold text-gray-700">
+                <a href="index.html#aktuelles" class="hover:text-sv-blue transition">Aktuelles</a>
+                <a href="index.html#abteilungen" class="hover:text-sv-blue transition">Abteilungen</a>
+                <a href="index.html#mitgliedschaft" class="hover:text-sv-blue transition">Mitgliedschaft</a>
+                <a href="index.html#shop" class="hover:text-sv-blue transition">Fanshop</a>
+                <a href="index.html#sponsoren" class="hover:text-sv-blue transition">Sponsoren</a>
+                <a href="index.html#kontakt" class="hover:text-sv-blue transition">Kontakt</a>
+            </div>
+
+            <button class="lg:hidden text-sv-blue text-2xl" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-sv-blue z-[60] flex flex-col items-center justify-center space-y-8 text-white text-2xl font-bold hidden">
+        <button class="absolute top-8 right-8 text-4xl" onclick="toggleMenu()">&times;</button>
+        <a href="index.html#aktuelles" onclick="toggleMenu()">Aktuelles</a>
+        <a href="index.html#abteilungen" onclick="toggleMenu()">Abteilungen</a>
+        <a href="index.html#mitgliedschaft" onclick="toggleMenu()">Mitgliedschaft</a>
+        <a href="index.html#shop" onclick="toggleMenu()">Fanshop</a>
+        <a href="index.html#sponsoren" onclick="toggleMenu()">Sponsoren</a>
+        <a href="index.html#kontakt" onclick="toggleMenu()">Kontakt</a>
+    </div>
+
+    <!-- Hauptinhalt Datenschutzerklärung -->
+    <main class="section-padding">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="mb-10">
+                <span class="text-sv-blue font-bold uppercase tracking-widest text-sm">Rechtliches & Konformität</span>
+                <h1 class="text-4xl md:text-5xl font-black text-gray-900 mt-2">Datenschutzerklärung</h1>
+                <p class="text-gray-500 mt-2 text-sm">Stand: Mai 2026</p>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-xl border border-gray-100 dsgvo-content">
+                <p class="font-semibold text-lg text-gray-700 mb-6">
+                    Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Nachfolgend informieren wir Sie ausführlich darüber, wie wir mit Ihren personenbezogenen Daten im Rahmen der Nutzung unserer Website umgehen.
+                </p>
+
+                <hr class="my-8 border-gray-100">
+
+                <!-- 1. Verantwortlicher -->
+                <h2 class="text-2xl font-black text-gray-950 mb-4 flex items-center">
+                    <span class="bg-sv-blue/10 text-sv-blue w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold mr-3">1</span>
+                    Wer ist verantwortlich für die Datenverarbeitung?
+                </h2>
+                <p>Verantwortlicher im Sinne der EU-Datenschutz-Grundverordnung (DSGVO) und des Bundesdatenschutzgesetzes (BDSG) ist der Verein:</p>
+                
+                <div class="bg-gray-50 p-6 rounded-2xl my-4 border-l-4 border-sv-accent">
+                    <strong class="block text-gray-900 text-lg">Sportverein Achternmeer e.V.</strong>
+                    <p class="my-1">Irisweg 17<br>26203 Wardenburg (ehemals Achternmeer)</p>
+                    <p class="my-1"><strong>Eingetragen im Vereinsregister des Amtsgerichts Oldenburg</strong></p>
+                    
+                    <div class="mt-4 pt-4 border-t border-gray-200 grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <span class="text-xs text-gray-500 uppercase font-bold block">Vertreten durch</span>
+                            <span class="font-semibold text-gray-800">Lennart Schipper (1. Vorsitzender)</span>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-500 uppercase font-bold block">Geschäftsstelle</span>
+                            <span class="font-semibold text-gray-800">Auf dem Felde 6, 26203 Wardenburg</span>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-500 uppercase font-bold block">Telefon</span>
+                            <a href="tel:+491743277594" class="text-sv-blue hover:underline font-semibold">0174 3277594</a>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-500 uppercase font-bold block">E-Mail</span>
+                            <a href="mailto:1.vorsitzender@sv-achternmeer.de" class="text-sv-blue hover:underline font-semibold">1.vorsitzender@sv-achternmeer.de</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Erfassung und Verarbeitung -->
+                <h2 class="text-2xl font-black text-gray-950 mt-10 mb-4 flex items-center">
+                    <span class="bg-sv-blue/10 text-sv-blue w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold mr-3">2</span>
+                    Bereitstellung der Website und Server-Logfiles
+                </h2>
+                <p>
+                    Bei jedem Aufruf unserer Website erfasst unser System automatisiert Daten und Informationen vom Computersystem des aufrufenden Rechners. Folgende Daten werden hierbei vorübergehend erhoben:
+                </p>
+                <ul>
+                    <li>Browsertyp und die verwendete Version</li>
+                    <li>Das Betriebssystem des Nutzers</li>
+                    <li>Der Internet-Service-Provider des Nutzers</li>
+                    <li>Die IP-Adresse des Nutzers</li>
+                    <li>Datum und Uhrzeit des Zugriffs</li>
+                    <li>Websites, von denen das System des Nutzers auf unsere Internetseite gelangt (Referrer)</li>
+                </ul>
+                <p>
+                    <strong>Rechtsgrundlage:</strong> Die vorübergehende Speicherung dieser Daten und Server-Logfiles erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse unsererseits an der Gewährleistung von Systemsicherheit, Fehleranalyse und dem reibungslosen Betrieb der Website). Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind (in der Regel nach spätestens 7 Tagen).
+                </p>
+
+                <!-- 3. Kontaktformular -->
+                <h2 class="text-2xl font-black text-gray-950 mt-10 mb-4 flex items-center">
+                    <span class="bg-sv-blue/10 text-sv-blue w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold mr-3">3</span>
+                    Datenverarbeitung bei Kontaktaufnahme
+                </h2>
+                <p>
+                    Wenn Sie uns per E-Mail oder über unser Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten (Vorname, Nachname, E-Mail-Adresse und Ihre Nachricht) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.
+                </p>
+                <p>
+                    <strong>Nutzung von Formspree:</strong> Für die technische Verarbeitung der über das Formular gesendeten Daten nutzen wir den Dienst <strong>Formspree</strong> (Formspree Inc., 21750 Hardy Oak Blvd, Ste 104, San Antonio, TX 78258, USA). Formspree dient uns als technischer Dienstleister, um die eingegebenen Daten des Kontaktformulars sicher per E-Mail an unsere Vereinsadresse weiterzuleiten. Die von Ihnen eingegebenen Daten werden auf den Servern von Formspree verarbeitet.
+                </p>
+                <p>
+                    Die Übermittlung in die USA ist durch Standardvertragsklauseln der EU-Kommission abgesichert, um ein angemessenes Datenschutzniveau zu garantieren.
+                </p>
+                <p>
+                    <strong>Rechtsgrundlage:</strong> Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt (z. B. eine geplante Vereinsmitgliedschaft) oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO). Die Daten werden nach abschließender Bearbeitung Ihrer Anfrage gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
+                </p>
+
+                <!-- 4. Mitgliedschaft -->
+                <h2 class="text-2xl font-black text-gray-950 mt-10 mb-4 flex items-center">
+                    <span class="bg-sv-blue/10 text-sv-blue w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold mr-3">4</span>
+                    Datenverarbeitung bei Mitgliedschaft & Formulardownloads
+                </h2>
+                <p>
+                    Auf unserer Website bieten wir Ihnen PDF-Formulare zum Download an (z. B. den Aufnahmeantrag, die Beitragsordnung oder den Spielerlaubnisantrag).
+                </p>
+                <p>
+                    Sollten Sie uns den ausgefüllten Mitgliedsantrag digital (per E-Mail) oder postalisch zukommen lassen, verarbeiten wir die darin angegebenen Daten (Name, Geburtsdatum, Anschrift, Bankverbindung, Abteilungsauswahl etc.) ausschließlich zur Begründung, Durchführung und Beendigung Ihrer Mitgliedschaft im Sportverein Achternmeer e.V.
+                </p>
+                <p>
+                    <strong>Rechtsgrundlage:</strong> Die Erhebung und Verarbeitung dieser Daten erfolgt zur Erfüllung des zwischen Ihnen (bzw. Ihrem Kind) und dem Verein begründeten Mitgliedschaftsverhältnisses gemäß Art. 6 Abs. 1 lit. b DSGVO. Ohne diese Daten können wir die Mitgliedschaft nicht verwalten und durchführen. Bestimmte finanzrelevante Daten müssen wir aufgrund gesetzlicher Aufbewahrungspflichten (z. B. nach der Abgabenordnung) für 10 Jahre speichern.
+                </p>
+
+                <!-- 5. Externe Verlinkungen (Online-Shop) -->
+                <h2 class="text-2xl font-black text-gray-950 mt-10 mb-4 flex items-center">
+                    <span class="bg-sv-blue/10 text-sv-blue w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold mr-3">5</span>
+                    Verlinkung zum SVA Online-Fanshop
+                </h2>
+                <p>
+                    Wir verlinken auf unserer Website auf unseren externen Fanshop, der in Kooperation mit der Plattform <strong>Fan12</strong> (Fan12 GmbH & Co. KG, Oldenburg) betrieben wird.
+                </p>
+                <p>
+                    Wenn Sie den Link anklicken (z. B. "Zum Online-Shop"), verlassen Sie unsere Website und werden auf die Webseite von Fan12 weitergeleitet. Ab diesem Zeitpunkt gelten die Datenschutzbestimmungen und Nutzungsbedingungen von Fan12. Auf die dort stattfindende Datenverarbeitung haben wir keinen Einfluss.
+                </p>
+
+                <!-- 6. Google Maps -->
+                <h2 class="text-2xl font-black text-gray-950 mt-10 mb-4 flex items-center">
+                    <span class="bg-sv-blue/10 text-sv-blue w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold mr-3">6</span>
+                    Einsatz von Google Maps
+                </h2>
+                <p>
+                    Zur einfachen Auffindbarkeit unserer Sportstätte binden wir auf unserer Kontaktseite eine interaktive Landkarte des Dienstes <strong>Google Maps</strong> (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) über ein sogenanntes iFrame ein.
+                </p>
+                <p>
+                    Durch den Besuch auf der Website erhält Google die Information, dass Sie die entsprechende Unterseite unserer Website aufgerufen haben. Zudem werden die unter Punkt 2 genannten Daten (z. B. IP-Adresse) an Google übertragen. Dies erfolgt unabhängig davon, ob Google ein Nutzerkonto bereitstellt, über das Sie eingeloggt sind, oder ob kein Nutzerkonto besteht. Wenn Sie bei Google eingeloggt sind, werden Ihre Daten direkt Ihrem Konto zugeordnet. Wenn Sie die Zuordnung mit Ihrem Profil bei Google nicht wünschen, müssen Sie sich vor Aktivierung der Karte bei Google ausloggen.
+                </p>
+                <p>
+                    <strong>Rechtsgrundlage:</strong> Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer Sportanlage und einer leichten Auffindbarkeit des von uns auf der Website angegebenen Ortes. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.
+                </p>
+
+                <!-- 7. Rechte der betroffenen Person -->
+                <h2 class="text-2xl font-black text-gray-950 mt-10 mb-4 flex items-center">
+                    <span class="bg-sv-blue/10 text-sv-blue w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold mr-3">7</span>
+                    Ihre Rechte als betroffene Person
+                </h2>
+                <p>Sie haben als betroffene Person das Recht, jederzeit Ihre Rechte gegenüber uns geltend zu machen. Bitte wenden Sie sich dazu an die oben genannten Kontaktdaten des Vorstands. Ihnen stehen folgende gesetzliche Rechte zu:</p>
+                
+                <h3>Auskunftsrecht (Art. 15 DSGVO)</h3>
+                <p>Sie haben das Recht, Auskunft darüber zu verlangen, ob und welche personenbezogenen Daten wir über Sie verarbeiten.</p>
+                
+                <h3>Recht auf Berichtigung (Art. 16 DSGVO)</h3>
+                <p>Sollten unrichtige oder unvollständige personenbezogene Daten über Sie bei uns gespeichert sein, haben Sie das Recht auf unverzügliche Richtigstellung.</p>
+                
+                <h3>Recht auf Löschung (Art. 17 DSGVO)</h3>
+                <p>Unter bestimmten Voraussetzungen (z. B. wenn die Daten für den Zweck ihrer Erhebung nicht mehr benötigt werden oder Sie Ihre Einwilligung widerrufen) können Sie die Löschung Ihrer Daten verlangen.</p>
+                
+                <h3>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</h3>
+                <p>Sie können die Einschränkung der Verarbeitung verlangen, z. B. wenn Sie die Richtigkeit der Daten bestreiten oder die Verarbeitung unrechtmäßig ist.</p>
+                
+                <h3>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</h3>
+                <p>Sie haben das Recht, die personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten.</p>
+                
+                <div class="bg-red-50 p-6 rounded-2xl my-6 border-l-4 border-red-500">
+                    <h4 class="font-bold text-red-900 mb-2 flex items-center">
+                        <i class="fas fa-exclamation-triangle mr-2"></i> WIDERSPRUCHSRECHT (Art. 21 DSGVO)
+                    </h4>
+                    <p class="text-red-800 text-sm mb-0">
+                        Sofern Ihre personenbezogenen Daten auf Grundlage von berechtigten Interessen gemäß Art. 6 Abs. 1 lit. f DSGVO verarbeitet werden, haben Sie das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit Widerspruch gegen diese Verarbeitung einzulegen. Wir verarbeiten die personenbezogenen Daten dann nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen.
+                    </p>
+                </div>
+
+                <h3>Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)</h3>
+                <p>
+                    Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt, haben Sie das Recht auf Beschwerde bei einer zuständigen Datenschutz-Aufsichtsbehörde. Die für uns zuständige Landesbehörde ist:
+                </p>
+                <p class="font-semibold text-gray-800 mt-2">
+                    Die Landesbeauftragte für den Datenschutz Niedersachsen<br>
+                    Prinzenstraße 5, 30159 Hannover<br>
+                    E-Mail: poststelle@lfd.niedersachsen.de
+                </p>
+
+                <!-- 8. Aktualität -->
+                <h2 class="text-2xl font-black text-gray-950 mt-10 mb-4 flex items-center">
+                    <span class="bg-sv-blue/10 text-sv-blue w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold mr-3">8</span>
+                    Änderungen dieser Datenschutzerklärung
+                </h2>
+                <p>
+                    Durch die Weiterentwicklung unserer Website oder die Implementierung neuer Technologien kann es notwendig werden, diese Datenschutzerklärung anzupassen. Wir behalten uns vor, die Datenschutzerklärung jederzeit mit Wirkung für die Zukunft zu ändern. Die jeweils aktuelle Version kann stets auf dieser Seite von Ihnen abgerufen werden.
+                </p>
+                
+                <div class="mt-12 flex justify-start">
+                    <a href="index.html" class="inline-flex items-center space-x-2 bg-sv-blue text-white px-6 py-3 rounded-full font-bold hover:bg-blue-900 transition shadow-md">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Zurück zur Startseite</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 italic">SV <span class="text-sv-accent">Achternmeer</span></h3>
+                    <p class="text-gray-400">Sportverein für die ganze Familie in Achternmeer. Seit Jahrzehnten ein fester Bestandteil der Dorfgemeinschaft.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Navigation</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="index.html#aktuelles" class="hover:text-sv-accent transition">Aktuelles</a></li>
+                        <li><a href="index.html#abteilungen" class="hover:text-sv-accent transition">Sportgruppen</a></li>
+                        <li><a href="index.html#mitgliedschaft" class="hover:text-sv-accent transition">Mitglied werden</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Rechtliches</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="impressum.html" class="hover:text-sv-accent transition">Impressum</a></li>
+                        <li><a href="datenschutz.html" class="text-sv-accent font-semibold">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
+                &copy; 2026 SV Achternmeer e.V.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
